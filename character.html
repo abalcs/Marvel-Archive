@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Scada&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/character.css" />
+    <link
+      rel="shortcut icon"
+      href="src/images/avengers.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="src/images/" type="image/x-icon" />
+    <title>DareDEVils - Character Page</title>
+  </head>
+  <body id="top" class="section">
+    <header>
+      <h2 id="character-title"></h2>
+      <a
+        href="index.html"
+        class="btn-small waves-effect waves-light red"
+        id="button"
+        >Go Back</a
+      >
+    </header>
+
+    <main class="section" id="main">
+      <div class="row">
+        <div class="col s12 m7">
+          <span class="flow-text"></span>
+          <div class="card horizontal">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m3" id="charimg"></div>
+                <div class="col s12 m9" id="bio"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <div id="titular-series"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <div id="titular-movie"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m5">
+          <span class="flow-text"></span>
+          <div class="card horizontal">
+            <div id="comics" class="card-content"></div>
+          </div>
+          <div class="card horizontal">
+            <div id="history" class="card-content col s12"></div>
+          </div>
+        </div>
+      </div>
+      <div class="scrollup">
+        <a href="#top"><i class="large material-icons">keyboard_arrow_up</i></a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="right-align">
+          <img
+            onclick="play()"
+            src="src/images/deadpool3.png"
+            width="150"
+            alt="easter egg deadpool wav file"
+          />
+          <audio
+            id="audio"
+            src="src/mp3/02 - Careless Whisper - George Michael.mp3"
+          ></audio>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/character.js"></script>
+  </body>
+</html>
